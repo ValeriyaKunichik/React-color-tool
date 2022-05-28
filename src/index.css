@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import '~antd/dist/antd.css';
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  
+  font-family: 'Montserrat', sans-serif;
+    background-color: #3e4560;
+   
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  margin: 20px;
+}
+
+/******************************************************/
+
+.slider{
+  display:flex;
+  flex-direction: row;
+}
+.horizontal-slider {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin:auto 0 auto auto;
+}
+
+.example-thumb {
+  cursor: pointer;
+  background: #ffffff;
+  border: 8px solid #3774ff;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 44%);
+}
+
+.example-thumb.active {
+  background-color: grey;
+}
+
+.example-track {
+  background: #ddd;
+}
+
+.example-track.example-track-0 {
+  background: #83a9ff;
+}
+
+.horizontal-slider .example-track {
+  
+  height: 4px;
+}
+
+.horizontal-slider .example-thumb {
+  top:-5px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+/****************************************************/
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+input[type="text"]{
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+.box {
+  height:80px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.row,.toggle-group{
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.switch{
+  margin: 5px;
 }
